@@ -1,16 +1,7 @@
 <?php
 
 class MagicalScepter extends StaticValuesWeapon {
-    public function getName():string
-    {
-        return "Magic Scepter";
-    }
-    public function getMinDamage():float
-    {
-        return 10;
-    }
-    public function getMaxDamage():float
-    {
-        return 500;
-    }
+    protected $name = "Magical Scepter";
+    protected $minDamage = 10;
+    protected $maxDamage = 500;
 }

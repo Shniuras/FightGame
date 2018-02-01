@@ -1,9 +1,6 @@
 <?php
 
-abstract class StaticValuesWeapon implements WeaponInterface{
-    protected $name;
-    protected $minDamage;
-    protected $maxDamage;
+abstract class StaticValuesWeapon implements WeaponInterface {
 
     public function getName():string
     {

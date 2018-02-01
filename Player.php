@@ -1,6 +1,6 @@
 <?php
 
-class Player implements PlayerInterface {
+class Player {
     protected $name;
     protected $health;
     protected $weapon;
@@ -14,28 +14,28 @@ class Player implements PlayerInterface {
         $this->armor = $armor;
     }
 
-    public function getName():string
+    public function getName()
     {
         return $this->name;
     }
 
-    public function getHealth():float
+    public function getHealth()
     {
-        return $this->health;
+        return round($this->health);
     }
 
-    public function getWeapon():WeaponInterface
+    public function getWeapon()
     {
         return $this->weapon;
     }
 
-    public function getArmor():ArmorInterface
+    public function getArmor()
     {
         return $this->armor;
     }
-    public function reduceHealth($amount):float
+    public function reduceHealth($amount)
     {
-        return $this->health - $amount;
+        echo round($this->health = $this->health - $amount);
     }
 
 }
